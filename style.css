@@ -351,34 +351,119 @@ button:hover{
 
 .area-choice1{
     padding:0px;
-    width:820px;
+    width:900px;
     height:500px;
     position:relative;
     top:200px;
     left:1.5%;
 }
 
-.shape-2d{
+.rectangle{
     position:relative;
     background-color:gray;
-    border-radius: 15px;
-    width: 350px;
-    height:450px;
+    border-radius:5px;
+    width: 150px;
+    height:180px;
     animation-name:slideRight;
     animation-duration:3s;
 }
 
-.shape-3d{
+.circle{
     position:relative;
     background-color:gray;
-    border-radius: 15px;
-    width: 350px;
-    height:450px;
-    left:55%;
-    bottom:450px;
+    border-radius: 100%;
+    width: 180px;
+    height:180px;
+    left:25%;
+    bottom:180px;
     animation-name:slideRight;
     animation-duration:3s;
 }
+
+.triangle {
+    width: 0; 
+    height: 0; 
+    border-radius:5px;
+    border-left: 102px solid transparent;
+    border-right: 102px solid transparent;
+    border-bottom: 176.664px solid gray;
+    position:relative;
+    bottom:360px;
+    left:50%;
+    animation-name:slideRight;
+    animation-duration:3s;
+  }
+
+  
+  .trapezoid {
+    border-bottom: 160px solid gray;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-radius:2px;
+    height: 0;
+    width: 160px;
+    position:relative;
+    left:23%;
+    bottom:450px;
+    animation-name:slideRight;
+    animation-duration:3s;
+  }
+
+  .rhombus{
+    position:relative;
+    bottom:300px;
+    animation-name:slideRight;
+    animation-duration:3s;
+  }
+
+  .losange {
+    width: 0;
+    height: 0;
+    border: 80px solid transparent;
+    border-bottom: 112px solid gray;
+    position: relative;
+    top: -80px;
+  }
+  .losange:after {
+    content: '';
+    position: absolute;
+    left: -80px;
+    top: 112px;
+    width: 0;
+    height: 0;
+    border: 80px solid transparent;
+    border-top: 112px solid gray;
+  }
+
+.reg-polygon{
+    position:relative;
+    bottom:550px;
+    left:52%;
+    animation-name:slideRight;
+    animation-duration:3s;
+}
+
+
+.pentagon {
+    position: relative;
+    width: 103.68px;
+    box-sizing: content-box;
+    border-width: 96px 34.56px 0;
+    border-style: solid;
+    border-color: gray transparent;
+  }
+  .pentagon:before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -163.2px;
+    left: -34.56px;
+    border-width: 0 86.4px 67.2px;
+    border-style: solid;
+    border-color: transparent transparent gray;
+  }
+
 
 .tag5 p{
     width:80px;
