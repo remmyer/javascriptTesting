@@ -588,3 +588,110 @@ button:hover{
     position:absolute;
     left:94%;
 }
+
+/* NUMBER GUESSING GAME */
+
+.nmbgg-main{
+    text-align: center;
+    width:580px;
+    padding:20px;
+    background-color:rgb(54, 54, 54);
+    border-radius:10px;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+    position:absolute;
+    top:200px;
+    left:550px;
+}
+
+.nmbgg-main p{
+    font-size:26px;
+    font-weight:600;
+}
+
+#guessLabel{
+    position:relative;
+    bottom:10px;
+}
+
+#guessField{
+    width:120px;
+}
+
+#submitBtn{
+    font-size:16px;
+    position: relative;
+    bottom:5px;
+    font-weight: 600;
+    background-color: rgb(35, 35, 35);
+    color:white;
+}
+
+#submitBtn:hover{
+    background-color:rgb(27, 27, 27);
+    cursor: pointer;
+    transition:ease-out 0.2s;
+}
+
+.nmbgg-prop input{
+    position:relative;
+    width:80px;
+}
+
+#minimum{
+    margin-left:60px;
+    float:left;
+}
+
+#maximum{
+    float:right;
+    margin-right:60px;
+}
+
+#minLabel{
+    font-size:26px;
+    margin-left:10px;
+    float:left;
+}
+
+#maxLabel{
+    font-size:26px;
+    margin-right:10px;
+    float:right;
+}
+
+.guessClass{
+    display:none;
+    position:relative;
+    padding-top:50px;
+}
+
+.guessClass label{
+    font-size:23px;;
+}
+
+#submitMinMax{
+    font-size:16px;
+    width:80px;
+    top:5px;
+    position: relative;
+    font-weight: 600;
+    background-color: rgb(35, 35, 35);
+    color:white;
+}
+
+#submitMinMax:hover{
+    background-color:rgb(27, 27, 27);
+    cursor: pointer;
+    transition:ease-out 0.2s;
+}
+
+.tag6 p{
+    width:80px;
+    color:rgb(165, 165, 165);
+    text-align: center;
+    display:inline-block;
+    position:absolute;
+    left:94%;
+    top:0px;
+    z-index:1;
+}

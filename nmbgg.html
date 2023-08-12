@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/27bc711d28.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header"><h1>Number guessing game</h1></div>
+    </header>
+    
+    <nav class="navbar">
+        <div>
+            <ul class="nav-list">
+                <a href="index.html"><li>Home</li></a>
+                <a href="hypotenuse.html"><li>Hypotenuse Calc</li></a>
+                <a href="area.html"><li>Area Calc</li></a>
+                <a href="counter.html"><li>Counter</li></a>
+                <a href="randomNumber.html"><li>Number Gen</li></a> 
+                <a href="nmbgg.html"><li><b>Number guessing game</b></li></a> 
+                <a href=""><li>Temperature conversion</li></a> 
+            </ul>
+        </div>
+    </nav>
+
+        <section class="nmbgg-main">
+            <div>
+                <p>Pick a minimum and a maximum for your guess</p>
+            </div>
+            <div class="nmbgg-prop">
+                <input type="number" id="minimum"><label id="minLabel">Min</label>
+                <input type="submit" id="submitMinMax">
+                <input type="number" id="maximum"><label id="maxLabel">Max</label>
+            </div>
+            <div id="guessId" class="guessClass">
+                <label id="guessLabel">Enter a guess</label><br>
+                <input type="number" id="guessField">
+                <input type="submit" id="submitBtn">
+                
+            </div>
+        </section>
+        
+
+
+
+    <footer class="tag6"><p>remmyer</p></footer>
+
+    <script src="nmbgg.js"></script>
+</body>
+</html>
