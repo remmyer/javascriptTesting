@@ -6,7 +6,7 @@ document.getElementById('submitMinMax').onclick = function(max, min){
     max = Number(max)
     min = document.getElementById('minimum').value
     min = Number(min)
-    if(max <= min){
+    if(max <= min ){
         alert("Your maximum number cannot be smaller or equal to your minimum number!")
     }
 else{
@@ -17,20 +17,20 @@ let guesses = 0
 console.log(answer)
 
 document.getElementById('submitBtn').onclick = function(){
-
    let guess = document.getElementById('guessField').value
    guess = Number(guess)
    guesses += 1
 
    if (guess == answer){
-    alert(`${answer} is the number. It took you ${guesses} guesses`)
-    }
+    document.getElementById('guessOutput').innerHTML = `${answer} is the number. It took you ${guesses} guess(es)!`
+    } 
     else if(guess < answer){
-        alert("Too small!")
+        document.getElementById('guessOutput').innerHTML = "Too small!"
     }
     else{
-        alert("Too large!")
+        document.getElementById('guessOutput').innerHTML = "Too large!"
     }
+
 }
 }
 }

@@ -685,6 +685,16 @@ button:hover{
     transition:ease-out 0.2s;
 }
 
+.guessOutput {
+    position:relative;
+    padding:10px;
+}
+
+#guessOutput{
+    color:white;
+    font-size:20px;
+}
+
 .tag6 p{
     width:80px;
     color:rgb(165, 165, 165);
