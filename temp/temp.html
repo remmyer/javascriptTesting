@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://kit.fontawesome.com/27bc711d28.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header"><h1>Temperature converter</h1></div>
+    </header>
+    
+    <nav class="navbar">
+        <div>
+            <ul class="nav-list">
+                <a href="../index.html"><li>Home</li></a>
+                <a href="../hypotenuse/hypotenuse.html"><li>Hypotenuse Calc</li></a>
+                <a href="../area-main/area.html"><li>Area Calc</li></a>
+                <a href="../counter/counter.html"><li>Counter</li></a>
+                <a href="../randomNumber/randomNumber.html"><li>Number Gen</li></a> 
+                <a href="../nmbgg/nmbgg.html"><li>Number guessing game</li></a> 
+                <a href="temp/temp.html"><li><b>Temperature conversion</b></li></a> 
+            </ul>
+        </div>
+    </nav>
+
+    <section>
+        <div class="temp">
+            <div class="temp-child">
+                <label>Enter a temperature:</label><br>
+                <input type="text" id="textBox"><br>
+            </div>
+       
+        <div class="conv">
+            <label id="h-conv">Convert to</label><br>
+            <input id="cButton" type="radio" name="unit">
+            <label id="celsius" for="cButton">Celsius</label><br>
+            <input id="fButton" type="radio" name="unit">
+            <label id="fahrenheit" for="fButton">Fahrenheit</label><br>
+        </div>
+        <div class="submitUnit">
+            <button type="button" id="submitUnit">Submit</button><br>
+        </div>
+         <div class="tempLabel">
+             <label id="tempLabel"></label>
+         </div>
+        
+        </div>
+    </section>
+
+       
+    <footer class="tag"><p>remmyer</p></footer>
+
+    <script src="temp.js"></script>
+</body>
+</html>

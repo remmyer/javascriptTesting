@@ -234,8 +234,8 @@ button{
 }
 
 button:hover{
-    background-color:rgb(29, 29, 29);
-    font-size:18px;
+    background-color:rgb(15, 15, 15);
+    transition:ease-out 0.2s;
 }
 
 .hypotenuse{
@@ -307,6 +307,46 @@ button:hover{
 
 /* AREA CALCULATOR */
 
+.fa-solid.fa-caret-down{
+    color:white;
+    position:absolute;
+    top:15px;
+    left: 85%;
+}
+
+.dropdown-btn{
+    display:block;
+    list-style-type: none;
+    text-align: left;
+    position:relative;
+    margin-bottom:30px;
+    padding:10px;
+    padding-left: 15px;
+    padding-right: 106px;
+    border-radius: 10px;
+    background: none;
+
+}
+
+.active{
+    background-color:rgb(36, 36, 36);
+}
+
+.dropdown-btn:hover{
+    background-color: rgb(37, 37, 37);
+    transition: ease-out 0.2s;
+}
+
+.dropdown-container{
+    display:none;
+}
+
+.dropdown-container a{
+    line-height: 15px;
+    list-style-type: disc;
+    font-size: 16px;
+}
+
 .main-area-container{
     width:1400px;
     height:880px;
@@ -368,6 +408,14 @@ button:hover{
     animation-duration:3s;
 }
 
+.rectangle { 
+    transition: all .2s ease-in-out; 
+}
+    
+.rectangle:hover { 
+    transform: scale(1.1); 
+}
+
 .circle{
     position:relative;
     background-color:gray;
@@ -378,6 +426,14 @@ button:hover{
     bottom:180px;
     animation-name:slideRight;
     animation-duration:3s;
+}
+
+.circle { 
+    transition: all .2s ease-in-out; 
+}
+    
+.circle:hover { 
+    transform: scale(1.1); 
 }
 
 .triangle {
@@ -394,8 +450,16 @@ button:hover{
     animation-duration:3s;
   }
 
+.triangle { 
+    transition: all .2s ease-in-out; 
+}
+    
+.triangle:hover { 
+    transform: scale(1.1); 
+}
+
   
-  .trapezoid {
+.trapezoid {
     border-bottom: 160px solid gray;
     border-left: 35px solid transparent;
     border-right: 35px solid transparent;
@@ -407,24 +471,32 @@ button:hover{
     bottom:450px;
     animation-name:slideRight;
     animation-duration:3s;
-  }
+}
 
-  .rhombus{
+.trapezoid { 
+    transition: all .2s ease-in-out; 
+}
+    
+.trapezoid:hover { 
+    transform: scale(1.1); 
+}
+
+.rhombus{
     position:relative;
     bottom:300px;
     animation-name:slideRight;
     animation-duration:3s;
-  }
+}
 
-  .losange {
+.losange {
     width: 0;
     height: 0;
     border: 80px solid transparent;
     border-bottom: 112px solid gray;
     position: relative;
     top: -80px;
-  }
-  .losange:after {
+}
+.losange:after {
     content: '';
     position: absolute;
     left: -80px;
@@ -433,7 +505,15 @@ button:hover{
     height: 0;
     border: 80px solid transparent;
     border-top: 112px solid gray;
-  }
+}
+
+.rhombus { 
+    transition: .2s ease-in-out; 
+}
+    
+.rhombus:hover { 
+    transform: scale(1.02); 
+}
 
 .reg-polygon{
     position:relative;
@@ -443,7 +523,6 @@ button:hover{
     animation-duration:3s;
 }
 
-
 .pentagon {
     position: relative;
     width: 103.68px;
@@ -452,7 +531,7 @@ button:hover{
     border-style: solid;
     border-color: gray transparent;
   }
-  .pentagon:before {
+.pentagon:before {
     content: "";
     position: absolute;
     height: 0;
@@ -462,7 +541,15 @@ button:hover{
     border-width: 0 86.4px 67.2px;
     border-style: solid;
     border-color: transparent transparent gray;
-  }
+}
+
+.reg-polygon { 
+    transition: all .2s ease-in-out; 
+}
+    
+.reg-polygon:hover { 
+    transform: scale(1.02); 
+}
 
 
 .tag5 p{
@@ -704,4 +791,65 @@ button:hover{
     left:94%;
     top:0px;
     z-index:1;
+}
+
+/* TEMPERATURE CONVERTER*/
+
+#submitUnit{
+    background-color: rgb(28, 28, 28);
+}
+
+#submitUnit:hover{
+    background-color: rgb(24, 24, 24);
+}
+
+.temp{
+    padding:20px;
+    width:480px;
+    background-color:rgb(54, 54, 54);
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    position:absolute;
+    top:200px;
+    left:36%;
+}
+
+.temp-child{
+    padding:20px;
+}
+
+.temp-child label{
+    position:relative;
+    bottom:8px;
+    font-weight: 500;
+}
+
+#textBox{
+    width:120px;
+}
+
+#h-conv{
+    font-weight: 500;
+}
+
+#celsius, #fahrenheit{
+    font-size:25px;
+}
+
+.submitUnit{
+    padding-top:10px;
+}
+
+.tempLabel{
+    padding-top:15px;
+}
+
+.conv input[type='radio']{
+    position:relative;
+    top:5px;
+    transform: scale(1.3);
+}
+
+.conv input[type='radio']:checked{
+    accent-color: rgb(0, 123, 255);
 }
