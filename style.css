@@ -1,6 +1,6 @@
 /*HOME PAGE*/
 .header{
-    min-width:99.4%;
+    min-width:99.2%;
     padding:5px;
     background-color: rgb(24, 24, 24);
     position:absolute;
@@ -172,6 +172,7 @@
     display:inline-block;
     position:absolute;
     left:94%;
+    z-index:1;
 
 }
 
@@ -241,8 +242,8 @@ button:hover{
 .hypotenuse{
     position:absolute;
     display:inline-block;
-    max-width:400px;
-    left:74%;
+    max-width:380px;
+    left:70%;
     top:120px;
     border-style:dashed ;
     border-color: rgb(255, 255, 255);
@@ -302,7 +303,7 @@ button:hover{
     display:inline-block;
     position:absolute;
     left:94%;
-    top:0px;
+    z-index:1;
 }
 
 /* AREA CALCULATOR */
@@ -347,9 +348,19 @@ button:hover{
     font-size: 16px;
 }
 
+.dropdown-container-b{
+    display:block;
+}
+
+.dropdown-container-b a{
+    line-height: 15px;
+    list-style-type: disc;
+    font-size: 16px;
+}
+
 .main-area-container{
-    width:1400px;
-    height:880px;
+    width:860px;
+    height:720px;
     position:absolute;
     top:100px;
     left:15%;
@@ -357,8 +368,9 @@ button:hover{
 }
 
 .area-container{
-    width:1400px;
-    height:880px;
+    padding-left:40px;
+    width:860px;
+    height:720px;
     position:relative;
     display:flex;
     overflow:hidden;
@@ -458,23 +470,18 @@ button:hover{
     transform: scale(1.1); 
 }
 
+.trapezoid{
+    position:absolute;
+    bottom:55px;
+    left:21%;
+    transition: all .2s ease-in-out; 
+}
   
-.trapezoid {
-    border-bottom: 160px solid gray;
-    border-left: 35px solid transparent;
-    border-right: 35px solid transparent;
-    border-radius:2px;
-    height: 0;
-    width: 160px;
+.trapezoid img{
+    width: 260px;
     position:relative;
-    left:23%;
-    bottom:450px;
     animation-name:slideRight;
     animation-duration:3s;
-}
-
-.trapezoid { 
-    transition: all .2s ease-in-out; 
 }
     
 .trapezoid:hover { 
@@ -482,12 +489,20 @@ button:hover{
 }
 
 .rhombus{
+    position:absolute;
+    bottom:40px;
+    transition: all .2s ease-in-out; 
+}
+
+.rhombus img{
     position:relative;
-    bottom:300px;
+    right:8%;
+    width:180px;
     animation-name:slideRight;
     animation-duration:3s;
 }
 
+/*
 .losange {
     width: 0;
     height: 0;
@@ -507,21 +522,27 @@ button:hover{
     border-top: 112px solid gray;
 }
 
-.rhombus { 
-    transition: .2s ease-in-out; 
-}
+*/
     
 .rhombus:hover { 
-    transform: scale(1.02); 
+    transform: scale(1.1); 
 }
 
 .reg-polygon{
+    position:absolute;
+    bottom:50px;
+    left:51%;
+    transition: all .2s ease-in-out; 
+}
+
+.reg-polygon img{
     position:relative;
-    bottom:550px;
-    left:52%;
+    width:200px;
     animation-name:slideRight;
     animation-duration:3s;
 }
+
+/*
 
 .pentagon {
     position: relative;
@@ -543,12 +564,10 @@ button:hover{
     border-color: transparent transparent gray;
 }
 
-.reg-polygon { 
-    transition: all .2s ease-in-out; 
-}
-    
+*/
+
 .reg-polygon:hover { 
-    transform: scale(1.02); 
+    transform: scale(1.1); 
 }
 
 
@@ -605,6 +624,7 @@ button:hover{
     display:inline-block;
     position:absolute;
     left:94%;
+    z-index: 1;
 }
 
 /* RANDOM NUMBER GENERATOR */
@@ -674,6 +694,7 @@ button:hover{
     display:inline-block;
     position:absolute;
     left:94%;
+    z-index:1;
 }
 
 /* NUMBER GUESSING GAME */
@@ -687,7 +708,7 @@ button:hover{
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
     position:absolute;
     top:200px;
-    left:550px;
+    left:35%;
 }
 
 .nmbgg-main p{
@@ -852,4 +873,575 @@ button:hover{
 
 .conv input[type='radio']:checked{
     accent-color: rgb(0, 123, 255);
+}
+
+.tag7 p{
+    width:80px;
+    color:rgb(165, 165, 165);
+    text-align: center;
+    display:inline-block;
+    position:absolute;
+    left:94%;
+    z-index:1;
+}
+
+/* AREA CALCULATOR // RECTANGLE */
+
+.rect-main-container{
+    width:1250px;
+    position:absolute;
+    left:15%;
+    top:120px;
+}
+
+.rect-main-container input[type="number"]{
+    width:100px;
+}
+
+.rect-main-container h3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-weight: 500;
+}
+
+.area-calculator h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    position:relative;
+    font-size:20px;
+    bottom:22px;
+    font-weight: 500;
+}
+
+.area-calculator-rect h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    position:relative;
+    font-size:20px;
+    bottom:22px;
+    font-weight: 500;
+}
+
+
+.areaUnit{
+    font-size:24px;
+}
+
+.bh-container{
+    width:65%;
+    position:relative;
+    display:flex;
+    padding:20px;
+    padding-bottom:100px;
+}
+
+.bh-container img{
+    border-radius:10px;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.sqr-container{
+    width:65%;
+    position:relative;
+    display:flex;
+    padding:20px;
+}
+
+.sqr-container img{
+    border-radius:10px;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.area-calculator{
+    background-color: rgb(54, 54, 54);
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width:500px;
+    height:200px;
+    margin-left: 80px;
+}
+
+.area-calculator-rect{
+    background-color: rgb(54, 54, 54);
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width:500px;
+    height:220px;
+    margin-left: 80px;
+}
+
+.exp-bh{
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+    position:absolute;
+    background-color:rgb(54, 54, 54);
+    border-radius:10px;
+    padding:15px;
+    width:300px;
+    top:20px;
+    left:74%;
+}
+
+
+.clr-rect{
+    background-color:rgba(0, 115, 255);
+    border-radius: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.clr-sqr{
+    background-color:rgba(251, 146, 0);
+    border-radius: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.clr-prl{
+    background-color:rgba(57, 255, 12, 0.5);
+    border-radius: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#submitFormulaRec{
+    font-size:16px;
+}
+
+#submitFormulaSqr{
+    font-size:16px;
+}
+
+/* AREA CALCULATOR // CIRCLE */
+
+.pr2-main-container{
+    width:1250px;
+    height:700px;
+    position:absolute;
+    left:15%;
+    top:120px;
+}
+
+.pr2-main-container input[type="number"]{
+    width:100px;
+}
+
+.pr2-main-container h3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-weight: 500;
+}
+
+.area-calculator-pr2 h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    position:relative;
+    font-size:20px;
+    bottom:22px;
+    font-weight: 500;
+}
+
+.area-container-pr2{
+    width:65%;
+    position:relative;
+    display:flex;
+    padding:20px;
+    padding-bottom:100px;
+}
+
+.area-container-pr2 img{
+    width:350px;
+    border-radius:10px;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.area-calculator-pr2{
+    background-color: rgb(54, 54, 54);
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width:500px;
+    height:200px;
+    margin-left: 80px;
+    position:relative;
+    top:35px;
+}
+
+.exp-pr2{
+    
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+    position:absolute;
+    background-color:rgb(54, 54, 54);
+    border-radius:10px;
+    padding:15px;
+    width:260px;
+    top:50px;
+    left:74%;
+}
+
+.clr-pr2{
+    background-color:rgb(105, 105, 105);
+    border-radius: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.area-container-circ img{
+    width:250px;
+    height:250px;
+    border-radius:10px;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+    position:relative;
+    bottom:25px;
+}
+
+.area-calculator-circ h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    position:relative;
+    font-size:20px;
+    bottom:22px;
+    font-weight: 500;
+}
+
+.area-container-circ{
+    width:65%;
+    height:200px;
+    position:relative;
+    display:flex;
+    padding:20px;
+}
+
+.area-calculator-circ{
+    background-color: rgb(54, 54, 54);
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width:400px;
+    height:200px;
+    margin-left: 80px;
+}
+
+/* AREA CALCULATOR // TRIANGLE */
+
+.tri-main-container{
+    width:1250px;
+    position:absolute;
+    left:15%;
+    top:120px;
+}
+
+.tri-main-container input[type="number"]{
+    width:100px;
+}
+
+.tri-main-container h3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-weight: 500;
+}
+
+.area-calculator-tri h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    position:relative;
+    font-size:20px;
+    bottom:22px;
+    font-weight: 500;
+}
+
+.area-calculator-triE h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    position:relative;
+    font-size:20px;
+    bottom:22px;
+    font-weight: 500;
+}
+
+.area-container-tri{
+    width:65%;
+    position:relative;
+    display:flex;
+    padding:20px;
+    padding-bottom:100px;
+}
+
+.area-container-tri img{
+    width:320px;
+    border-radius:10px;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.area-container-triE{
+    width:65%;
+    position:relative;
+    display:flex;
+    padding:20px;
+}
+
+.area-container-triE img{
+    width:320px;
+    border-radius:10px;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.area-calculator-tri{
+    background-color: rgb(54, 54, 54);
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width:500px;
+    height:240px;
+    margin-left: 80px;
+}
+
+.area-calculator-triE{
+    background-color: rgb(54, 54, 54);
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width:500px;
+    height:200px;
+    margin-left: 80px;
+}
+
+.exp-tri{
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+    position:absolute;
+    background-color:rgb(54, 54, 54);
+    border-radius:10px;
+    padding:15px;
+    width:300px;
+    top:55px;
+    left:72%;
+}
+
+.clr-tri{
+    background-color:rgba(251, 146, 0);
+    border-radius: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.clr-triE{
+    background-color:rgb(0, 98, 255);
+    border-radius: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+/* AREA CALCULATOR // RHOMBUS */
+
+.rh-main-container{
+    width:1250px;
+    height:700px;
+    position:absolute;
+    left:15%;
+    top:120px;
+}
+
+.rh-main-container input[type="number"]{
+    width:100px;
+}
+
+.rh-main-container h3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-weight: 500;
+}
+
+.area-calculator-rh h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    position:relative;
+    font-size:20px;
+    bottom:22px;
+    font-weight: 500;
+}
+
+.rh-container{
+    width:65%;
+    position:relative;
+    padding:20px;
+    padding-bottom:100px;
+}
+
+.rh-container img{
+    width:500px;
+    border-radius:10px;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.area-calculator-rh{
+    background-color: rgb(54, 54, 54);
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+    padding-top:2px;
+    border-radius: 10px;
+    width:500px;
+    height:240px;
+    margin-left: 80px;
+    position:relative;
+    left:9%;
+    top:35px;
+}
+
+.exp-rh{
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+    position:absolute;
+    background-color:rgb(54, 54, 54);
+    border-radius:10px;
+    padding:15px;
+    width:300px;
+    top:55px;
+    left:65%;
+}
+
+.clr-rh{
+    background-color:rgb(105, 105, 105);
+    border-radius: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+/* AREA CALCULATOR // TRAPEZOID */
+
+
+.tra-main-container{
+    width:1250px;
+    height:700px;
+    position:absolute;
+    left:15%;
+    top:120px;
+}
+
+.tra-main-container input[type="number"]{
+    width:100px;
+}
+
+.tra-main-container h3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-weight: 500;
+}
+
+.area-calculator-tra h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    position:relative;
+    font-size:20px;
+    bottom:22px;
+    font-weight: 500;
+}
+
+.tra-container{
+    width:65%;
+    position:relative;
+    padding:20px;
+    padding-bottom:100px;
+}
+
+.tra-container img{
+    width:500px;
+    border-radius:10px;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.area-calculator-tra{
+    background-color: rgb(54, 54, 54);
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+    padding-top:2px;
+    border-radius: 10px;
+    width:500px;
+    height:280px;
+    margin-left: 80px;
+    position:relative;
+    left:9%;
+    top:35px;
+}
+
+.exp-tra{
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+    position:absolute;
+    background-color:rgb(54, 54, 54);
+    border-radius:10px;
+    padding:15px;
+    width:260px;
+    top:20px;
+    left:65%;
+}
+
+.clr-tra{
+    background-color:rgb(105, 105, 105);
+    border-radius: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+
+/* AREA CALCULATOR // REGULAR POLYGON */
+.pg-main-container{
+    width:1250px;
+    height:700px;
+    position:absolute;
+    left:15%;
+    top:120px;
+}
+
+.pg-main-container input[type="number"]{
+    width:100px;
+}
+
+.pg-main-container h3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-weight: 500;
+}
+
+.area-calculator-pg h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    position:relative;
+    font-size:20px;
+    bottom:22px;
+    font-weight: 500;
+}
+
+.pg-container{
+    width:65%;
+    position:relative;
+    padding:20px;
+    padding-bottom:100px;
+}
+
+.pg-container img{
+    width:500px;
+    border-radius:10px;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.area-calculator-pg{
+    background-color: rgb(54, 54, 54);
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+    padding-top:2px;
+    border-radius: 10px;
+    width:500px;
+    height:240px;
+    margin-left: 80px;
+    position:relative;
+    left:9%;
+    top:35px;
+}
+
+.exp-pg{
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+    position:absolute;
+    background-color:rgb(54, 54, 54);
+    border-radius:10px;
+    padding:15px;
+    width:300px;
+    top:15px;
+    left:64%;
+}
+
+.clr-pg{
+    background-color:rgb(105, 105, 105);
+    border-radius: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
 }

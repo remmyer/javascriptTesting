@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <script src="https://kit.fontawesome.com/27bc711d28.js" crossorigin="anonymous"></script>
+    <title>Regular Polygon Area</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header"><h1>Regular polygon area</h1></div>
+    </header>
+    
+    <nav class="navbar">
+        <div>
+            <ul class="nav-list">
+                <a href="../../index.html"><li>Home</li></a>
+                <a href="/../hypotenuse/hypotenuse.html"><li>Hypotenuse Calc</li></a>
+
+              <button class="dropdown-btn active"><b>Area Calc</b><i class="fa-solid fa-caret-down"></i></button>
+                <div class="dropdown-container-b">
+                    <ul>
+                        <a href="/area-main/area/rectangle.html"><li>Rectangle</li></a>
+                        <a href="/area-main/area/circle.html"><li>Circle</li></a>
+                        <a href="/area-main/area/triangle.html"><li>Triangle</li></a>
+                        <a href="/area-main/area/rhombus.html"><li>Rhombus</li></a>
+                        <a href="/area-main/area/trapezoid.html"><li>Trapezoid</li></a>
+                        <a href="/area-main/area/poly.html"><li><b>Reg. polygon</b></li></a>
+                    </ul>
+                </div>
+                <a href="/../counter/counter.html"><li>Counter</li></a>
+                <a href="/../randomNumber/randomNumber.html"><li>Number Gen</li></a> 
+                <a href="/../nmbgg/nmbgg.html"><li>Number guessing game</li></a> 
+                <a href="/../temp/temp.html"><li>Temperature conversion</li></a> 
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="pg-main-container">
+
+        <div class="pg-container">
+            <img src="../../images/formula-poly.png">
+            <div class="area-calculator-pg">
+                <h3>Enter the mesures of sides, a, b and the altitude:</h3>
+                <label class="areaUnit">P = </label>
+                <input id="inputP" type="number"><br>
+                <label class="areaUnit">a = </label>
+                <input id="inputSide" type="number"><br>
+                <button id="submitFormulaPg" type="button">Submit</button>
+                <h4 id="areaPg"></h4>
+            </div>
+        </div>
+
+        <div class="info-bar-pg">
+            <div class="exp-pg">
+                <p>Calculating the area of a regular polygon involves understanding its symmetry. A regular polygon is a closed shape with equal side lengths and equal interior angles. To find its area, use the formula <span class="clr-pg">A = (perimeter * apothem) / 2</span>, where "perimeter" is the total distance around the polygon (perimeter = side length * number of sides), and "apothem" is the distance from the center of the polygon to the midpoint of a side. This formula beautifully captures the essence of a regular polygon's area, as it combines the perimeter, which represents the total boundary length, with the apothem, which represents the distance from the center to the midpoint of a side, similar to how we calculate the area of a rectangle or triangle. In summary, to compute the area of a regular polygon, multiply the perimeter by the apothem and divide by 2, revealing the space enclosed within this balanced, uniform shape.</p>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+    <script src="area-list.js"></script>
+    <script src="poly.js"></script>
+    </section>

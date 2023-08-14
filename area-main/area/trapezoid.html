@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <script src="https://kit.fontawesome.com/27bc711d28.js" crossorigin="anonymous"></script>
+    <title>Trapezoid Area</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header"><h1>Trapezoid area</h1></div>
+    </header>
+    
+    <nav class="navbar">
+        <div>
+            <ul class="nav-list">
+                <a href="../../index.html"><li>Home</li></a>
+                <a href="/../hypotenuse/hypotenuse.html"><li>Hypotenuse Calc</li></a>
+
+              <button class="dropdown-btn active"><b>Area Calc</b><i class="fa-solid fa-caret-down"></i></button>
+                <div class="dropdown-container-b">
+                    <ul>
+                        <a href="/area-main/area/rectangle.html"><li>Rectangle</li></a>
+                        <a href="/area-main/area/circle.html"><li>Circle</li></a>
+                        <a href="/area-main/area/triangle.html"><li>Triangle</li></a>
+                        <a href="/area-main/area/rhombus.html"><li>Rhombus</li></a>
+                        <a href="/area-main/area/trapezoid.html"><li><b>Trapezoid</b></li></a>
+                        <a href="/area-main/area/poly.html"><li>Reg. polygon</li></a>
+                    </ul>
+                </div>
+                <a href="/../counter/counter.html"><li>Counter</li></a>
+                <a href="/../randomNumber/randomNumber.html"><li>Number Gen</li></a> 
+                <a href="/../nmbgg/nmbgg.html"><li>Number guessing game</li></a> 
+                <a href="/../temp/temp.html"><li>Temperature conversion</li></a> 
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="tra-main-container">
+
+        <div class="tra-container">
+            <img src="../../images/formula-trapezoid.png">
+            <div class="area-calculator-tra">
+                <h3>Enter the mesures of sides, a, b and the altitude:</h3>
+                <label class="areaUnit">a = </label>
+                <input id="inputSideA" type="number"><br>
+                <label class="areaUnit">b = </label>
+                <input id="inputSideB" type="number"><br>
+                <label class="areaUnit">h = </label>
+                <input id="inputHeight" type="number"><br>
+                <button id="submitFormulaTra" type="button">Submit</button>
+                <h4 id="areaTra"></h4>
+            </div>
+        </div>
+
+        <div class="info-bar-tra">
+            <div class="exp-tra">
+                <p>Calculating the area of a trapezoid requires understanding its unique shape. A trapezoid is a four-sided polygon with only one pair of parallel sides. To find its area, use the formula <span class="clr-tra">A = (1/2) * (sum of parallel sides) * height</span>, where "sum of parallel sides" refers to the sum of the lengths of the two parallel sides, and "height" is the perpendicular distance between these parallel sides. This formula embodies the essence of the trapezoid's area, as it's half the product of the sum of parallel sides and the height, resembling how we calculate the area of a rectangle. In summary, to compute the area of a trapezoid, add the lengths of the parallel sides, multiply by the height, then divide by 2, revealing the space enclosed within this distinct quadrilateral.</p>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+    <script src="area-list.js"></script>
+    <script src="trapezoid.js"></script>
+    </section>

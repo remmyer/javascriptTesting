@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <script src="https://kit.fontawesome.com/27bc711d28.js" crossorigin="anonymous"></script>
+    <title>Triangle area</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header"><h1>Triangle area</h1></div>
+    </header>
+    
+    <nav class="navbar">
+        <div>
+            <ul class="nav-list">
+                <a href="../../index.html"><li>Home</li></a>
+                <a href="/../hypotenuse/hypotenuse.html"><li>Hypotenuse Calc</li></a>
+
+              <button class="dropdown-btn active"><b>Area Calc</b><i class="fa-solid fa-caret-down"></i></button>
+                <div class="dropdown-container-b">
+                    <ul>
+                        <a href="/area-main/area/rectangle.html"><li>Rectangle</li></a>
+                        <a href="/area-main/area/circle.html"><li>Circle</li></a>
+                        <a href="/area-main/area/triangle.html"><li><b>Triangle</b></li></a>
+                        <a href="/area-main/area/rhombus.html"><li>Rhombus</li></a>
+                        <a href="/area-main/area/trapezoid.html"><li>Trapezoid</li></a>
+                        <a href="/area-main/area/poly.html"><li>Reg. polygon</li></a>
+                    </ul>
+                </div>
+                <a href="/../counter/counter.html"><li>Counter</li></a>
+                <a href="/../randomNumber/randomNumber.html"><li>Number Gen</li></a> 
+                <a href="/../nmbgg/nmbgg.html"><li>Number guessing game</li></a> 
+                <a href="/../temp/temp.html"><li>Temperature conversion</li></a> 
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="tri-main-container">
+
+        <div class="area-container-tri">
+            <img src="../../images/formula-tri.jpg">
+            <div class="area-calculator-tri">
+                <h3>Enter the mesures of the base and height:</h3>
+                <label class="areaUnit">b = </label>
+                <input id="inputBase" type="number"><br>
+                <label class="areaUnit">h = </label>
+                <input id="inputHeight" type="number"><br>
+                <button id="submitFormulaTri" type="button">Submit</button>
+                <h4 id="areaTri"></h4>
+            </div>
+        </div>
+
+        <div class="area-container-triE">
+            <img src="../../images/formula-triE.png">
+            <div class="area-calculator-triE">
+                <h3>Enter the mesure of a side:</h3>
+                <label class="areaUnit">a = </label>
+                <input  id="inputSide" type="number"><br>
+                <button id="submitFormulaTriE" type="button">Submit</button>
+                <h4 id="areaTriE"></h4>
+            </div>
+        </div>
+
+
+        <div class="info-bar-tri">
+            <div class="exp-tri">
+                <p>The area of a triangle is a foundational concept in geometry, enabling us to understand its spatial extent. For any triangle, the area (A) is calculated by multiplying the base (b) of the triangle by its corresponding height (h) and then dividing by 2, represented as the formula <span class="clr-tri">A = (b × h) / 2</span>. This versatile formula applies to triangles of all types. However, when dealing with the elegant symmetry of an equilateral triangle, which boasts three equal sides and angles, a distinct formula emerges: <span class="clr-triE">A = (side length, a)² * (√3) / 4</span>. This specialized equation showcases the unique characteristics of equilateral triangles, where the area is determined by the square of one side length (a) multiplied by the square root of 3 and then divided by 4, emphasizing the symmetrical allure that sets equilateral triangles apart in the realm of geometry.</p>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+    <script src="area-list.js"></script>
+    <script src="triangle.js"></script>
+    </section>

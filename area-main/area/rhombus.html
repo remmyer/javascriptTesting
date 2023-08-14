@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <script src="https://kit.fontawesome.com/27bc711d28.js" crossorigin="anonymous"></script>
+    <title>Rhombus Area</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header"><h1>Rhombus area</h1></div>
+    </header>
+    
+    <nav class="navbar">
+        <div>
+            <ul class="nav-list">
+                <a href="../../index.html"><li>Home</li></a>
+                <a href="/../hypotenuse/hypotenuse.html"><li>Hypotenuse Calc</li></a>
+
+              <button class="dropdown-btn active"><b>Area Calc</b><i class="fa-solid fa-caret-down"></i></button>
+                <div class="dropdown-container-b">
+                    <ul>
+                        <a href="/area-main/area/rectangle.html"><li>Rectangle</li></a>
+                        <a href="/area-main/area/circle.html"><li>Circle</li></a>
+                        <a href="/area-main/area/triangle.html"><li>Triangle</li></a>
+                        <a href="/area-main/area/rhombus.html"><li><b>Rhombus</b></li></a>
+                        <a href="/area-main/area/trapezoid.html"><li>Trapezoid</li></a>
+                        <a href="/area-main/area/poly.html"><li>Reg. polygon</li></a>
+                    </ul>
+                </div>
+                <a href="/../counter/counter.html"><li>Counter</li></a>
+                <a href="/../randomNumber/randomNumber.html"><li>Number Gen</li></a> 
+                <a href="/../nmbgg/nmbgg.html"><li>Number guessing game</li></a> 
+                <a href="/../temp/temp.html"><li>Temperature conversion</li></a> 
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="rh-main-container">
+
+        <div class="rh-container">
+            <img src="../../images/formula-rhombus.png">
+            <div class="area-calculator-rh">
+                <h3>Enter the mesures of d₁ and d₂:</h3>
+                <label class="areaUnit">D = </label>
+                <input id="inputD1" type="number"><br>
+                <label class="areaUnit">d = </label>
+                <input id="inputD2" type="number"><br>
+                <button id="submitFormulaRh" type="button">Submit</button>
+                <h4 id="areaRh"></h4>
+            </div>
+        </div>
+
+        <div class="info-bar-rh">
+            <div class="exp-rh">
+                <p>Calculating the area of a rhombus involves understanding its unique characteristics. A rhombus is a four-sided polygon with all sides equal in length, and opposite angles equal in measure. To find the area of a rhombus, we can use the formula <span class="clr-rh">A = (diagonal₁ * diagonal₂) / 2</span>, where "diagonal₁" and "diagonal₂" are the lengths of any two diagonals that intersect at a 90-degree angle inside the rhombus. This formula reflects the fact that the area of a rhombus is half the product of these diagonals, similar to how a rectangle's area is the product of its length and width. In summary, to calculate the area of a rhombus, multiply the lengths of any two perpendicular diagonals, then divide by 2, unveiling the space enclosed within this four-sided jewel of geometry.</p>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+    <script src="area-list.js"></script>
+    <script src="rhombus.js"></script>
+    </section>
