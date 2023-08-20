@@ -142,6 +142,8 @@
     animation-timing-function: ease-in;
 }
 
+
+
 @keyframes left{
     0%{opacity:0%}
     100%{opacity:100%}
@@ -173,7 +175,25 @@
     position:absolute;
     left:94%;
     z-index:1;
+}
 
+/* CLOCK PROGRAM */
+
+.clock-container{
+    top:400px;
+    left:20%;
+    width:500px;
+    height:100px;
+    text-align:left;
+    position:absolute;
+    transition:ease-out 0.5s;
+    animation-name: slideRight;
+    animation-duration:2s;
+}
+
+#clock-display{
+    font-weight:500;
+    font-size:48px;
 }
 
 /* HYPOTENUSE CALCULATOR*/
